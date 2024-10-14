@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Задания</title>
+</head>
+<body>
+
+<h1>Задания по JavaScript 2.3</h1>
+
+<h2>Задание 1: Операторы и операнды</h2>
+<script>
+    let x = 5 + 10 * 2; // Операторы: +, *, =; Операнды: 5, 10, 2
+    let isValid = (x > 10) && (x < 30); // Операторы: >, <, &&, =; Операнды: x, 10, 30
+    x++; // Оператор: ++; Операнд: x
+    delete obj.prop; // Оператор: delete, =; Операнд: obj.prop
+</script>
+
+<h2>Задание 2: Арифметические операторы</h2>
+<script>
+    let num1 = 10;
+    let num2 = 5;
+    console.log("Сложение:", num1 + num2); // 15
+    console.log("Разность:", num1 - num2); // 5
+    console.log("Произведение:", num1 * num2); // 50
+    console.log("Деление:", num1 / num2); // 2
+    console.log("Остаток:", num1 % num2); // 0
+    console.log("Возведение в степень:", num1 ** 2); // 100
+</script>
+
+<h2>Задание 3: Бинарные и унарные операторы</h2>
+<script>
+    let a = 10;
+    let b = -a; // Унарный оператор: -; b = -10
+    a++; // Унарный оператор: ++; a = 11
+    let c = a + b; // Бинарный оператор: +; c = 1
+</script>
+
+<h2>Задание 4: Операторы проверки отношений</h2>
+<script>
+    let x = 15;
+    let y = 20;
+    if (x > y) {
+        console.log("x больше y");
+    } else if (x < y) {
+        console.log("x меньше y");
+    } else {
+        console.log("x равен y");
+    }
+</script>
+
+<h2>Задание 5: Проверка на равенство и неравенство</h2>
+<script>
+    console.log(5 == '5'); // true (нестрогое равенство)
+    console.log(5 === '5'); // false (строгое равенство)
+    console.log(null == undefined); // true (нестрогое равенство)
+    console.log(null === undefined); // false (строгое равенство)
+</script>
+
+<h2>Задание 6: Оператор in</h2>
+<script>
+    let user = {
+        name: 'John',
+        age: 30
+    };
+    console.log('name' in user); // true, свойство существует
+    console.log('email' in user); // false, свойство отсутствует
+</script>
+
+<h2>Задание 7: Оператор присваивания</h2>
+<script>
+    let a = 10;
+    a += 5; // 15
+    a *= 2; // 30
+    a -= 3; // 27
+</script>
+
+<h2>Задание 8: Логические операторы</h2>
+<script>
+    let isAdmin = true;
+    let isLoggedIn = false;
+    let canViewPage = isAdmin && isLoggedIn; // false
+    let hasPermission = isAdmin || isLoggedIn; // true
+    let isGuest = !isLoggedIn; // true
+</script>
+
+<h2>Задание 9: Тернарный оператор</h2>
+<script>
+    let isLoggedIn = true; // Измените на false для тестирования
+    let message = isLoggedIn ? "Добро пожаловать" : "Вход запрещен";
+    console.log(message);
+</script>
+
+<h2>Задание 10: Оператор typeof и оператор delete</h2>
+<script>
+    console.log(typeof 123); // number
+    console.log(typeof 'Hello'); // string
+    console.log(typeof undefined); // undefined
+    let car = {
+        make: 'Toyota',
+        model: 'Corolla'
+    };
+    delete car.model; // Удаляет свойство model
+    console.log(car); // { make: 'Toyota' }
+</script>
+
+<h2>Задание 11: Практика с несколькими операторами</h2>
+<script>
+    let num1 = 10;
+    let num2 = 20;
+    
+    let sum = num1 + num2; // Сложение
+    let isGreater = num1 > num2; // Сравнение
+    let logicalCheck = (num1 < num2) && (num1 > 0); // Логический оператор
+    let resultMessage = logicalCheck ? "Условия истинны" : "Условия ложны"; // Тернарный оператор
+    
+    console.log("Сумма:", sum);
+    console.log("num1 больше num2:", isGreater);
+    console.log(resultMessage);
+</script>
+
+</body>
+</html>
